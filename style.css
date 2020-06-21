@@ -12,29 +12,66 @@ nav {
   display: grid;
   -ms-grid-columns: 20% 50% 15% 15%;
       grid-template-columns: 20% 50% 15% 15%;
-  padding: 30px 5px;
+  padding: 30px 40px;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
   position: fixed;
   z-index: 1;
+  width: 100%;
   background: #ffffff55;
   border-bottom: 1px solid #00000033;
 }
 
 nav #logo {
-  color: #25252588;
+  color: #252525;
   font-size: 26px;
 }
 
 nav a {
   text-decoration: none;
-  color: #25252588;
+  color: #252525;
+  text-align: right;
 }
 
 #banner img {
   height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+#about {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+#about img {
+  width: 100%;
+}
+
+#product {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: "text pic";
+}
+
+#product img {
+  width: 100%;
+}
+
+#product *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: pic;
+}
+
+#product *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: text;
 }
 /*# sourceMappingURL=style.css.map */
