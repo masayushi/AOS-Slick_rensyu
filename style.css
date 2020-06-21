@@ -1,0 +1,40 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 微軟正黑體;
+}
+
+nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 50% 15% 15%;
+      grid-template-columns: 20% 50% 15% 15%;
+  padding: 30px 5px;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  position: fixed;
+  z-index: 1;
+  background: #ffffff55;
+  border-bottom: 1px solid #00000033;
+}
+
+nav #logo {
+  color: #25252588;
+  font-size: 26px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #25252588;
+}
+
+#banner img {
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=style.css.map */

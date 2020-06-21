@@ -1,0 +1,39 @@
+
+$color-black:#25252588;
+$color-black-33: #00000033;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 微軟正黑體;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 20% 50% 15% 15%;
+    padding: 30px 5px;
+    align-items: baseline;
+    position: fixed;
+    z-index: 1;
+    background: #ffffff55;
+    border-bottom: 1px solid $color-black-33;
+
+    #logo {
+        color: $color-black;
+        font-size: 26px;
+    }
+
+    a{
+        text-decoration: none;
+        color: $color-black;
+    }
+}
+
+#banner {
+    img {
+        height: 100vh;
+        object-fit: cover;
+
+    }
+}
